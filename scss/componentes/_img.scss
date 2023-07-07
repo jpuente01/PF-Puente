@@ -1,0 +1,77 @@
+.img-logo{
+    width: 50px;
+}
+
+.img-home{
+    max-height: 660px;
+    overflow: hidden;
+}
+
+.imgagnt{
+    width: 120px;
+    height: 180px;
+    margin: 1%;
+}
+
+.imgagnt2{
+    width: 200px;
+    height: 180px;
+}
+
+@media (max-width:576px){
+    .imgagnt{
+        width: 60px;
+        height: 90px;
+        margin: 1%;
+    }
+    
+    .imgagnt2{
+        width: 100px;
+        height: 90px;
+    }
+}
+
+.agenticon{
+    height: map-get($imgagentes, ht);
+    width: map-get($imgagentes, wt);
+}
+
+.agenticon2{
+    height: map-get($imgagentes, ht);
+    width: map-get($imgagentes, wt2);
+}
+
+.agenticon3{
+    height: 30rem;
+    width: map-get($imgagentes, wt3);
+}
+
+@media (max-width:992px){
+    .agenticon{
+        height: 26rem;
+        width: 16rem;
+    }
+    .agenticon2{
+        height: 26rem;
+        width: 12rem;
+    }
+    .argenticon3{
+        height: 24rem;
+        width: 22rem;
+    }
+}
+
+@media (max-width:576px){
+    .agenticon{
+        height: 15rem;
+        width: 10rem;
+    }
+    .agenticon2{
+        height: 24rem;
+        width: 10rem;
+    }
+    .agenticon3{
+        height: 16rem;
+        width: 16rem;
+    }
+}

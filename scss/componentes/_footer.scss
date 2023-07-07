@@ -1,0 +1,11 @@
+footer{
+    margin-top: 5%;
+    background-color: nth($color, 6);
+    div{
+        h3{
+            color: nth($color, 5);
+            display: flex;
+            justify-content: center;
+        }
+    }
+}

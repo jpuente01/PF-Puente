@@ -1,0 +1,23 @@
+#wiki{
+    list-style: map-get($lists, lstyle);  
+
+}
+
+.witem{
+    font-size: nth($size, 2);
+    color: nth($color, 3);
+    text-decoration: none;
+    font-weight: map-get($lists, fwght);
+}
+
+.lwitem{
+    display: map-get($lists, ds);
+    justify-content: map-get($lists, js);
+    
+}
+
+@media (max-width:576px){
+    .witem{
+        font-size: nth($size, 4);
+    }
+}

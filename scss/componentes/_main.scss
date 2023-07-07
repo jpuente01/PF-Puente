@@ -1,0 +1,170 @@
+
+
+#maintitle {
+    font-size: nth($size , 1);
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    color: nth($color, 3);
+    display: map-get($titles, ds);
+    justify-content: map-get($titles, js);
+    padding: map-get($titles, pd);
+    margin-bottom: 7%;
+}
+
+@media (max-width:576px){
+    #maintitle{
+        font-size: nth($size, 3);
+    }
+}
+
+.subtitulos{
+    font-size: nth($size, 2);
+    font-style: italic;
+    display: map-get($titles, ds);
+    justify-content: map-get($titles, js);
+    padding: map-get($titles, pd);
+    text-align: center;
+    color: nth($color, 6);
+}
+
+@media (max-width:576px){
+    .subtitulos{
+        font-size: nth($size, 4)
+    }
+}
+
+
+.divadv{
+    display: flex;
+    justify-content: center;
+}
+
+.pjs{
+    display: flex;
+    .agents{
+        background-color: nth($color, 3);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        text-decoration: none;
+        height: 150px;
+        width: 210px;
+        margin: 2%;
+        padding: 6%;
+        transform: skew(-10deg);
+        color: nth($color, 5);
+        font-weight: map-get($btns, fwght);
+    }
+
+}
+
+@media (max-width:576px){
+    .pjs{
+        .agents{
+            height: 75px;
+            width: 105;
+        }
+    }
+}
+
+.hag{
+    color: nth($color, 1);
+    font-size: nth($size, 4);
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width:576px){
+    .hag{
+        font-size: nth($size , 6);
+    }
+}
+
+.agentpag{
+    background-color: nth($color, 6);
+    height: 22rem;
+    margin: 0;
+    padding: 0;
+}
+
+.contag{
+    margin: map-get($imgagentes, mn);
+}
+
+.mainagent{
+    display: map-get($titles, ds);
+    flex-direction: column;
+    margin-left: 2%;
+    margin-top: 2%;
+    height: 100%;
+    h1{
+        color: nth($color, 5);
+        font-weight: nth($weights, 1);
+        font-style: italic;
+    }
+    div{
+        img{
+            padding: 1%;
+            margin-bottom: 2%;
+            height: 50px;
+            width: 50px;
+        }
+    }
+    h2{
+        color: nth($color, 3);
+        font-weight: nth($weights, 2);
+        font-style: italic;
+    }
+    p{
+        color: nth($color, 5);
+    }
+}
+
+@media (max-width:922px){
+    .mainagent{    
+        h1{
+            font-size: nth($size, 4);
+        }
+        h2{
+            font-size: nth($size, 5);
+        }
+        p{
+            font-size: smaller;
+        }
+    }
+}
+
+@media (max-width:576px){
+    .mainagent{    
+        h1{
+            font-size: nth($size, 5);
+        }
+        h2{
+            font-size: nth($size, 6);
+        }
+        p{
+            font-size: smaller;
+        }
+    }
+}
+
+.habilidades{
+    background-color: white;
+}
+
+
+.redes{
+    display: flex;
+    justify-content: center;
+    color: nth($color, 5);
+    text-decoration: none;
+}
+
+.contact{
+    display: flex;
+    justify-content: center;
+    color: nth($color, 5);
+    text-decoration: none;
+}
+

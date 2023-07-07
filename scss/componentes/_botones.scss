@@ -1,0 +1,18 @@
+.listadv{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    margin: 5% 5%;
+    color: white;
+    background-color: nth($color, 3);
+    font-style: map-get($btns, fsty);
+    font-weight: map-get($btns, btnwht);
+    font-size: nth($size, 2);
+    padding: map-get($btns, pd);
+}
+
+@media (max-width:576px){
+    .listadv{
+        font-size: nth($size, 4);
+    }
+}

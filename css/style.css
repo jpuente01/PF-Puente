@@ -1,6 +1,279 @@
-*{
-    padding: 0;
-    margin: 0;
+#maintitle {
+  font-size: 76px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bolder;
+  color: rgb(146, 0, 0);
+  display: flex;
+  justify-content: center;
+  margin-bottom: 7%;
 }
 
+@media (max-width: 576px) {
+  #maintitle {
+    font-size: 36px;
+  }
+}
+.subtitulos {
+  font-size: 54px;
+  font-style: italic;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: rgb(20, 28, 34);
+}
 
+@media (max-width: 576px) {
+  .subtitulos {
+    font-size: 24px;
+  }
+}
+.divadv {
+  display: flex;
+  justify-content: center;
+}
+
+.pjs {
+  display: flex;
+}
+.pjs .agents {
+  background-color: rgb(146, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  height: 150px;
+  width: 210px;
+  margin: 2%;
+  padding: 6%;
+  transform: skew(-10deg);
+  color: white;
+  font-weight: 800;
+}
+
+@media (max-width: 576px) {
+  .pjs .agents {
+    height: 75px;
+    width: 105;
+  }
+}
+.hag {
+  color: black;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 576px) {
+  .hag {
+    font-size: 12px;
+  }
+}
+.agentpag {
+  background-color: rgb(20, 28, 34);
+  height: 22rem;
+  margin: 0;
+  padding: 0;
+}
+
+.contag {
+  margin: 3%;
+}
+
+.mainagent {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2%;
+  margin-top: 2%;
+  height: 100%;
+}
+.mainagent h1 {
+  color: white;
+  font-weight: 900;
+  font-style: italic;
+}
+.mainagent div img {
+  padding: 1%;
+  margin-bottom: 2%;
+  height: 50px;
+  width: 50px;
+}
+.mainagent h2 {
+  color: rgb(146, 0, 0);
+  font-weight: 800;
+  font-style: italic;
+}
+.mainagent p {
+  color: white;
+}
+
+@media (max-width: 922px) {
+  .mainagent h1 {
+    font-size: 24px;
+  }
+  .mainagent h2 {
+    font-size: 20px;
+  }
+  .mainagent p {
+    font-size: smaller;
+  }
+}
+@media (max-width: 576px) {
+  .mainagent h1 {
+    font-size: 20px;
+  }
+  .mainagent h2 {
+    font-size: 12px;
+  }
+  .mainagent p {
+    font-size: smaller;
+  }
+}
+.habilidades {
+  background-color: white;
+}
+
+.redes {
+  display: flex;
+  justify-content: center;
+  color: white;
+  text-decoration: none;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  color: white;
+  text-decoration: none;
+}
+
+footer {
+  margin-top: 5%;
+  background-color: rgb(20, 28, 34);
+}
+footer div h3 {
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.img-logo {
+  width: 50px;
+}
+
+.img-home {
+  max-height: 660px;
+  overflow: hidden;
+}
+
+.imgagnt {
+  width: 120px;
+  height: 180px;
+  margin: 1%;
+}
+
+.imgagnt2 {
+  width: 200px;
+  height: 180px;
+}
+
+@media (max-width: 576px) {
+  .imgagnt {
+    width: 60px;
+    height: 90px;
+    margin: 1%;
+  }
+  .imgagnt2 {
+    width: 100px;
+    height: 90px;
+  }
+}
+.agenticon {
+  height: 36rem;
+  width: 24rem;
+}
+
+.agenticon2 {
+  height: 36rem;
+  width: 17rem;
+}
+
+.agenticon3 {
+  height: 30rem;
+  width: 36rem;
+}
+
+@media (max-width: 992px) {
+  .agenticon {
+    height: 26rem;
+    width: 16rem;
+  }
+  .agenticon2 {
+    height: 26rem;
+    width: 12rem;
+  }
+  .argenticon3 {
+    height: 24rem;
+    width: 22rem;
+  }
+}
+@media (max-width: 576px) {
+  .agenticon {
+    height: 15rem;
+    width: 10rem;
+  }
+  .agenticon2 {
+    height: 24rem;
+    width: 10rem;
+  }
+  .agenticon3 {
+    height: 16rem;
+    width: 16rem;
+  }
+}
+.minav {
+  background-color: rgb(61, 61, 61);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.witem {
+  font-size: 54px;
+  color: rgb(146, 0, 0);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.lwitem {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 576px) {
+  .witem {
+    font-size: 24px;
+  }
+}
+.listadv {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  margin: 5% 5%;
+  color: white;
+  background-color: rgb(146, 0, 0);
+  font-style: italic;
+  font-weight: bolder;
+  font-size: 54px;
+}
+
+@media (max-width: 576px) {
+  .listadv {
+    font-size: 24px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
