@@ -1,3 +1,14 @@
 .minav{
     background-color: rgb(61, 61, 61);
+    a{
+        color: nth($color, 5);
+    }
+}
+
+.mi-dropdownmenu{
+    li{
+        a{
+            color: nth($color, 1);
+        }
+    }
 }

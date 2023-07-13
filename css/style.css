@@ -77,7 +77,7 @@
 }
 
 .contag {
-  margin: 3%;
+  margin: 1%;
 }
 
 .mainagent {
@@ -147,6 +147,81 @@
   text-decoration: none;
 }
 
+.mapsection {
+  margin: 2%;
+}
+
+.mapdiv {
+  display: flex;
+  align-items: center;
+  height: 12rem;
+}
+
+.mapnick {
+  font-size: 54px;
+  font-style: italic;
+  display: flex;
+  color: black;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+@media (max-width: 576px) {
+  .mapnick {
+    font-size: 20px;
+    margin: 3%;
+  }
+  .mapdiv {
+    flex-wrap: wrap;
+    margin-bottom: 20%;
+  }
+}
+.mapinfo {
+  margin: 2%;
+}
+
+.div-textinfo {
+  padding: 2%;
+  font-size: 24px;
+}
+
+.map-layout {
+  background-color: rgb(20, 28, 34);
+  display: flex;
+  align-items: center;
+}
+.map-layout p {
+  color: white;
+}
+.map-layout h2 {
+  color: white;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.armas {
+  display: flex;
+  justify-content: center;
+  padding: 2%;
+}
+.armas h2 {
+  padding: 2%;
+}
+.armas p {
+  padding: 2%;
+}
+.armas div {
+  margin: 1%;
+}
+
+@media (max-width: 576px) {
+  .armas {
+    flex-direction: column;
+  }
+  .map-layout {
+    flex-wrap: wrap;
+  }
+}
 footer {
   margin-top: 5%;
   background-color: rgb(20, 28, 34);
@@ -199,8 +274,8 @@ footer div h3 {
 }
 
 .agenticon3 {
-  height: 30rem;
-  width: 36rem;
+  height: 34rem;
+  width: 40rem;
 }
 
 @media (max-width: 992px) {
@@ -231,8 +306,54 @@ footer div h3 {
     width: 16rem;
   }
 }
+.mapimg {
+  width: 300px;
+  height: 168px;
+}
+
+.map-in-img {
+  height: 22rem;
+  width: 40rem;
+  border-bottom-right-radius: 60%;
+  object-fit: cover;
+}
+
+.img-arma {
+  height: 12rem;
+  width: 18rem;
+}
+
+.img-arma-rifle {
+  height: 5rem;
+  width: 20rem;
+  margin-top: 3%;
+}
+
+.img-arma2 {
+  height: 8rem;
+  width: 25rem;
+  margin-top: 3%;
+}
+
+@media (max-width: 576px) {
+  .img-arma {
+    height: 13rem;
+    width: 15rem;
+  }
+  .img-arma2 {
+    height: 10rem;
+    width: 20rem;
+  }
+}
 .minav {
   background-color: rgb(61, 61, 61);
+}
+.minav a {
+  color: white;
+}
+
+.mi-dropdownmenu li a {
+  color: black;
 }
 
 * {

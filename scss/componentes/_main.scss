@@ -168,3 +168,79 @@
     text-decoration: none;
 }
 
+.mapsection{
+    margin: 2%;
+}
+
+.mapdiv{
+    display: map-get($centradoinicial, ds);
+    align-items: center;
+    height: 12rem;
+}
+
+.mapnick{
+    font-size: nth($size, 2);
+    font-style: italic;
+    display: map-get($titles, ds);
+    color: nth($color, 1);
+    font-weight: nth($weights, 1);
+    text-decoration: none;
+}
+
+@media (max-width:576px){
+    .mapnick{
+        font-size: nth($size, 5);
+        margin: 3%;
+    }
+    .mapdiv{
+        flex-wrap: wrap;
+        margin-bottom: 20%;
+    }
+}
+
+.mapinfo{
+    margin: 2%;
+}
+
+.div-textinfo{
+    padding: 2%;
+    font-size: nth($size, 4);
+}
+
+.map-layout{
+    background-color: nth($color, 6);
+    display: flex;
+    align-items: center;
+    p{
+        color: nth($color, 5);
+    }
+    h2{
+        color: nth($color , 5);
+        font-weight: nth($weights, 1);
+        font-style: italic;
+    }
+}
+
+.armas{
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+    h2{
+        padding: 2%;
+    }
+    p{
+        padding: 2%;
+    }
+    div{
+        margin: 1%;
+    }
+}
+
+@media (max-width:576px){
+    .armas{
+        flex-direction: column;
+    }
+    .map-layout{
+        flex-wrap: wrap;
+    }
+}
