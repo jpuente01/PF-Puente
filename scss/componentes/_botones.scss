@@ -9,6 +9,34 @@
     font-weight: map-get($btns, btnwht);
     font-size: nth($size, 2);
     padding: map-get($btns, pd);
+    transform: skew(-9deg);
+    overflow: hidden;
+    span{
+        z-index: 2;
+        transition: all .2s;
+    }
+}
+
+.listadv:hover{
+    span{
+        color: black;
+    }
+}
+
+.listadv:after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    transition: all 0.2s;
+    left: -100%;
+    background-color: nth($color, 4);
+}
+
+.listadv:hover::after{
+    left: 0;
 }
 
 @media (max-width:576px){

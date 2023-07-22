@@ -4,11 +4,15 @@
     font-size: nth($size , 1);
     font-family: 'Roboto', sans-serif;
     font-weight: bolder;
-    color: nth($color, 3);
+    color: nth($color, 5);
     display: map-get($titles, ds);
     justify-content: map-get($titles, js);
     padding: map-get($titles, pd);
-    margin-bottom: 7%;
+    margin: 3%;
+    margin-inline: 20%;
+    padding: 2rem;
+    transform: skew(-10deg);
+    background-color: nth($color, 6);
 }
 
 @media (max-width:576px){
@@ -55,8 +59,33 @@
         transform: skew(-10deg);
         color: nth($color, 5);
         font-weight: map-get($btns, fwght);
+        transition: all 0.2s;
+        overflow: hidden;
+        span{
+            z-index: 2;
+            transition: all .2s;
+        }
     }
+    .agents:after{
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        transition: all 0.2s;
+        left: -100%;
+        background-color: nth($color, 4);
+    }
+    .agents:hover::after{
+        left: 0;
+    }
+}
 
+.agents:hover{
+    span{
+        color: black;
+    }
 }
 
 @media (max-width:576px){
@@ -154,19 +183,6 @@
 }
 
 
-.redes{
-    display: flex;
-    justify-content: center;
-    color: nth($color, 5);
-    text-decoration: none;
-}
-
-.contact{
-    display: flex;
-    justify-content: center;
-    color: nth($color, 5);
-    text-decoration: none;
-}
 
 .mapsection{
     margin: 2%;
@@ -243,4 +259,29 @@
     .map-layout{
         flex-wrap: wrap;
     }
+}
+
+.grillarma{
+    padding: 3%;
+}
+
+.div-grillarma{
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+.tiposdearma{
+    font-size: nth($size, 2);
+    font-style: italic;
+    display: map-get($titles, ds);
+    color: nth($color, 1);
+    font-weight: nth($weights, 1);
+    text-decoration: none;
+}
+
+.cr-footer{
+    display: flex;
+    justify-content: center;
+    color: nth($color, 5);
+    text-decoration: none;
+
 }

@@ -2,10 +2,12 @@ footer{
     margin-top: 5%;
     background-color: nth($color, 6);
     div{
+        padding: 1%;
         h3{
             color: nth($color, 5);
             display: flex;
             justify-content: center;
+            font-size: nth($size, 5);
         }
     }
 }

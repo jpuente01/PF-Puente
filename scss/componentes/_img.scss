@@ -115,3 +115,36 @@
         width: 20rem;
     }
 }
+
+.img-map-layout{
+    rotate: 90deg;
+    height: 30rem;
+    width: 30rem;
+}
+
+.img-map-layout2{
+    height: 30rem;
+    width: 30rem;
+}
+
+.img-map-layout3{
+    height: 20rem;
+    width: 20rem;
+    rotate: 90deg;
+    margin: 5%;
+}
+
+@media (max-width:576px){
+    .img-map-layout{
+        height: 16rem;
+        width: 16rem;
+    }
+    .img-map-layout2{
+        height: 16rem;
+        width: 16rem;
+    }
+    .img-map-layout3{
+        height: 16rem;
+        width: 16rem;
+    }
+}
